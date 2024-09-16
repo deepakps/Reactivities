@@ -1,4 +1,4 @@
-interface Duck {
+export interface Duck {
     name: string;
     numLegs: number;
     makeSound: (sound: string) => void;
@@ -18,6 +18,5 @@ const duck2: Duck = {
 
 duck1.makeSound('Qucaak!');
 duck2.makeSound('fuck!');
-duck1.name = '42'
 
-export const duck = [duck1, duck2];
+export const ducks = [duck1, duck2];
